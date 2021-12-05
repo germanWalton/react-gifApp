@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en <GifGrid /> debe mostrar el componente correctamente 1`] = `
+<Fragment>
+  <hr
+    className="mt-5"
+  />
+  <h3
+    className="animate__animated animate__zoomIn mt-5 text-center p-3"
+  >
+    Dragon Ball
+  </h3>
+  <p
+    className="animate__animated animate__flash"
+  >
+    loading...
+  </p>
+  <div
+    className="card-grid "
+  />
+</Fragment>
+`;
+
+exports[`Pruebas en <GifGrid /> debe mostrar items cuando se cargan las imagenes useFetchGifs 1`] = `
+<Fragment>
+  <hr
+    className="mt-5"
+  />
+  <h3
+    className="animate__animated animate__zoomIn mt-5 text-center p-3"
+  >
+    Dragon Ball
+  </h3>
+  <div
+    className="card-grid "
+  >
+    <GifGridItem
+      id="ABC"
+      key="ABC"
+      title="Dragon Ball"
+      url="http://www.google.com"
+    />
+  </div>
+</Fragment>
+`;

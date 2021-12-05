@@ -10,6 +10,8 @@ const AddCategory = ({ setCategories }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+
     if (inputValue.trim().length > 2) {
       setCategories((cats) => [inputValue, ...cats]);
       setInputValue("");
@@ -18,7 +20,8 @@ const AddCategory = ({ setCategories }) => {
 
   return (
       <form onSubmit={handleSubmit}>
-        <div className="d-flex justify-content-center mt-5">
+      <div className="d-flex justify-content-center mt-5">
+        <p>{inputValue}</p>
           <input
             className="form-control w-50 p-3"
             type="text"
@@ -29,7 +32,7 @@ const AddCategory = ({ setCategories }) => {
           <button className="btn btn-lg btn-secondary p-3" type="submit">
             Buscar
         </button>
-        <button className="btn btn-lg btn-dark ms-3 p-3" type="reset" onClick={() => { setCategories([""]) } }>
+        <button className="btn btn-lg btn-dark ms-3 p-3" type="reset" onClick={() => { setCategories(["Beavis and Butthead"]) } }>
           Borrar busqueda
           </button>
         </div>
